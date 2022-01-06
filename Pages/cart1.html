@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="../Styles/home.css">
+    <link rel="stylesheet" href="../Styles/cart.css">
+	
+	<title></title>
+</head>
+<body>
+   <header id="header">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <h1 class="logo me-auto me-lg-0">Artex</h1>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+              <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./contact.html">Conatct</a></li>
+                <li><a href="Sign up.html">Sign</a></li>
+                <li class="cart">
+                    <a href="./cart1.html" disabled="true" onclick="return false">Cart<i class="fas fa-shopping-cart"></i><span>0</span></a>
+                </li>
+            </ul>
+                
+            </nav>
+            <!-- .navbar -->
+
+            <div class="header-social-links d-none d-lg-block">
+              <a href="#" disabled="true" class="user" onclick="return false">
+                <i class="far fa-user"></i> <span id="555"></span></a>
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </header>
+	<div class="px-4 px-lg-0">
+  
+  <div class="container text-white py-5 text-center">
+    <h1 class="display-4"> Shopping cart</h1>
+  </div>
+ 
+
+  <div class="pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-5 rounded shadow-sm mb-5 cart_container">
+
+          <!-- Shopping cart table -->
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="border-0 ">
+                    <div class="p-2 px-3 text-uppercase">Product</div>
+                  </th>
+                  <th scope="col" class="border-0 ">
+                    <div class="py-2 text-uppercase">Price</div>
+                  </th>
+                  <th scope="col" class="border-0 ">
+                    <div class="py-2 text-uppercase">Quantity</div>
+                  </th>
+                  <th scope="col" class="border-0 ">
+                    <div class="py-2 text-uppercase"></div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="cart-items">
+              </tbody>
+            </table>
+            <div class="float-right text-right">
+                <h4>Total:</h4>
+                <h1 class="cart-total-price">$0</h1>
+            </div>
+          </div>
+          <!-- End -->
+          <div class="row mt-4 d-flex align-items-center">
+        <div class="col-sm-6 order-md-2 text-right">
+            <a href="#" class="btn  mb-4 btn-lg pl-5 pr-5 checkout_btn">Checkout</a>
+        </div>
+        <div class="col-sm-6 mb-3 mb-m-1 order-md-1 text-md-left">
+            <a href="categories.html">
+                <i class="fas fa-arrow-left mr-2"></i> Continue Shopping</a>
+        </div>
+    </div>
+        </div>
+
+      </div>
+
+
+      <div class="row py-5 p-4 rounded shadow-sm favorites_container" id="fav">
+       <h5 class="text-center text-uppercase">Your Favorites</h5>
+        
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+    <div class="container">
+        <div class="box">
+            <h3>Artex</h3>
+            <ul class="social">
+                <li>
+                    <a href="#" class="facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>                    
+                <li>
+                    <a href="#" class="youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="text">
+              - Our quality, solutions and market approach supports innovative partnership,
+              trust and sustainability for our suppliers, customers and employees.<br>
+              - we make furniture for life and take Pride in our Danish roots and Craftmanship.
+            </p>
+        </div>
+        <div class="box">
+        <ul class="links">
+          <li><i class="fas fa-angle-double-right"></i><a href="#">Customer Service</a></li>
+          <li><i class="fas fa-angle-double-right"></i><a href="#">Terms and Conditions</a></li>
+          <li><i class="fas fa-angle-double-right"></i><a href="#">Privacy Policy</a></li>
+          <li><i class="fas fa-angle-double-right"></i><a href="#">Site Map</a></li>
+          <li><i class="fas fa-angle-double-right"></i><a href="#">Delivery Policy</a></li>
+        </ul>
+        </div>
+        <div class="box">
+            <div class="line">
+                <i class="fas fa-map-marker-alt fa-fw"></i>
+                <div class="info">New Sohag University, Sohag Center, Sohag</div>
+              </div>
+              <div class="line">
+                <i class="far fa-clock fa-fw"></i>
+                <div class="info">Business Hours: From 10:00 To 19:00</div>
+              </div>
+              <div class="line">
+                <i class="fas fa-phone-volume fa-fw"></i>
+                <div class="info">
+                  <span>+20235355644</span>
+                  <span>+20198765432</span>
+                </div>
+              </div>
+        </div>
+        <div class="box footer-gallery">
+            <img src="../Source/dinning room.jpeg" alt="">
+            <img src="../Source/kitchen.png" alt="">
+            <img src="../Source/living-room-.jpg" alt="">
+            <img src="../Source/bedroom.jpg" alt="">
+            <img src="../Source/slider1.jpg" alt="">
+            <img src="../Source/slider2.jpg" alt="">
+        </div>
+    </div>
+    <p class="copyright">
+        &copy; 2021 <span>Artex</span> All Right Reserved
+    </p>
+</div>
+<script type="text/javascript" src="../js/cart.js"></script>
+<!-- <script src="../js/categories.js"></script> -->
+<script src="../js/addToFav.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#fav div").css({'background':'light',
+    'border-radius':'5px',
+  'margin':'10px',
+  'font-size':'20px',
+  'font-style':'italic',
+  'box-shadow':'10px 10px 30px 5px gray',
+  'display':'flex',
+  // 'flex':'justify-content',
+  'justify-content':'space-evenly'})
+  $("#fav div span").css({
+  'margin-top':'25px'})
+  $("#fav div img").css({'border-radius':'3px',
+  'width':'100px',
+  'hieght':'100px',
+  'margin':'5px'})
+  $("#fav div button:even").addClass("btn btn-danger dels")
+  $("#fav div button:odd").addClass("btn btn-primary carts")
+  $(".carts").attr("onclick",'addTocart2()')
+  })
+</script>
+<script>
+        
+  if(localStorage.getItem("fullName") == null){
+      getElementById("555").textContent=""
+  }
+  else {document.getElementById("555").textContent =" " + localStorage.getItem("fullName");}
+  
+</script>
+
+</body>
+</html>

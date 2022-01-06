@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+.productCard{
+    transition: all .5s ease-in-out;
+}
+.productCard:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 30%) ;
+    background-color: #fffff9;
+}
+
+.categoryCard:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 5px 10px #34b7a7;
+}
+
+.catName {
+
+    width: 100px;
+    height: 5px;
+    background-color: #34b7a7;
+    color: #34b7a7;
+    justify-content: start;
+    visibility: visible;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.productName , .productPrice {
+    font-weight: bolder;
+    color: black;
+    
+}
+
+.rounded{
+    height: 350px;
+    width: 400px;
+}

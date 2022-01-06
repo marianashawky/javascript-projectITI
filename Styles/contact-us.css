@@ -1,0 +1,89 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+    color:black;
+    height: auto;
+    background-image: url("../Source/project.jpeg");
+    background-repeat: round;
+    
+}
+#mainBox{
+   border: 2px solid gray;
+   padding-left: 1%;
+   margin: auto auto;
+   background-color: white;
+}
+a{
+    text-decoration: none;
+}
+#navBar{
+    background-color: #34b7a7;
+    margin-top: 5%;
+    border-radius: 5%;
+}
+#a1{
+color: gray;
+font-weight: bold;
+}
+#a2{
+    color: white;
+    font-weight: bold;
+   
+}
+#firstline,#secondline{
+  word-spacing: 2px;
+  letter-spacing: 2px;
+    margin: 3%;
+    font-weight: 2px;
+}
+#firstline{
+    color: rgb(145, 141, 141);
+    
+}
+i{
+    margin-right: 5%;
+}
+#allElement{
+    background-color: white;
+    height: 700px;
+}
+
+.imgeDiv{
+     height: 110px;
+  
+    margin-bottom: 25%;
+
+}
+
+.h5{
+    font-weight: bolder;
+}
+.links{
+    color: black;
+    margin-bottom: 5%;
+}
+a:hover{
+    text-decoration: none;
+    opacity: .4;
+}
+#messager{
+    background-color:white;
+    height: 400px;
+}
+
+#comment,#para,#sent{
+    margin: 3%;
+}
+
+#para{
+    color:#34b7a7;
+}
+#sent{
+    background-color:#34b7a7 ;
+    color:white;
+}
+#message{
+    display: none;
+}

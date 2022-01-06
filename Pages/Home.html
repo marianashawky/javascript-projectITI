@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Styles/home.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Furniture Shop</title>
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header id="header">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <h1 class="logo me-auto me-lg-0">Artex</h1>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a class="active" href="Home.html" disabled="true" onclick="return false">Home</a></li>
+                    <li><a href="./categories.html">Categories</a></li>
+                    <li><a href="./contact.html">Conatct</a></li>
+                    <li><a href="Sign up.html">Sign</a></li>
+                    <li class="cart">
+                        <a href="./cart1.html">Cart<i class="fas fa-shopping-cart"></i><span>0</span></a>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- .navbar -->
+
+            <div class="header-social-links d-none d-lg-block">
+                <a href="#" disabled="true" class="user" onclick="return false">
+                    <i class="far fa-user"></i> <span id="555"></span></a>
+                <a href="https://www.twitter.com/" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.insagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Slider -->
+    <div id="slider" class="carousel slide container">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Source/slider1.jpg" alt="slider1" class="d-block"
+                    style="width:100%;border-radius: 7px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            </div>
+            <div class="carousel-item">
+                <img src="../Source/slider2.jpg" alt="slider2" class="d-block"
+                    style="width:100%;border-radius: 7px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            </div>
+            <div class="carousel-item">
+                <img src="../Source/slider3.jpg" alt="slider3" class="d-block"
+                    style="width:100%;border-radius: 7px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <!-- End Slider -->
+    <!-- Start Body -->
+    <div class="container">
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="col-sm-4 ">
+                <div class=" my-4"> <img src="../Source/giphy.webp" style="width: 400px;border-radius: 10px;"></div>
+                <img src="../Source/5O6uOssIkcySGcIxuBiCEDlSPSRZlqDA.jpg" style="width: 100%;">
+                <img src="../Source/images (1).jfif" style="width: 100%;">
+                <img src="../Source/12f96461dcc09bc6204235d202bf193f.jpg" style="width: 100%;">
+                <img src="../Source/New-Year-feature.jpg" style="width: 100%;height: 150px;margin-top: 5px;border-radius: 10px;">
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <div class="col m-3 text-center" style="display: inline;">
+                        <a href="./categories.html" onclick="check(0)"><img src="../Source/living-room-.jpg"
+                                class="btnLiv rounded-circle mb-5" style="width: 300px;height: 250px;"></a>
+                        <h2 class="m-2">Living Room</h2>
+                    </div>
+                    <div class="col m-3 text-center" style="display: inline;">
+                        <a href="./categories.html" onclick="check(1)"><img src="../Source/dinning room.jpeg"
+                                class="btnDin rounded-circle mb-5" style="width: 300px;height: 250px;"></a>
+                        <h2 class="m-2">Dinning Room</h2>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col m-3 text-center" style="display: inline;">
+                        <a href="./categories.html" onclick="check(2)"><img src="../Source/kitchen.png"
+                                class="btnKit rounded-circle mb-5" style="width: 300px;height: 250px;"></a>
+                        <h2 class="m-2">Kitchen</h2>
+                    </div>
+                    <div class="col m-3 text-center" style="display: inline;">
+                        <a href="./categories.html" onclick="check(3)"><img src="../Source/bedroom.jpg"
+                                class="btnBed rounded-circle mb-5" style="width: 300px;height: 250px;"></a>
+                        <h2 class="m-2">Bedroom</h2>
+                    </div>
+                    <div><img src="../Source/200w.webp" title="always on time"
+                            style="margin-left:30px ;margin-right: 10px;">
+                        <span>Get your Home and we will get <bold style="color:brown;font-size: larger;">Happiness
+                            </bold> for you</span></div>
+                    <div class="text-center">
+                        <h4 style="color: gray;">Our Customers</h4><img src="../Source/logos-1.png"
+                            style="width: 800px;height: 120px;opacity: 0.2;" id="custimg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Body -->
+    <!-- Start footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>ARTEX</h3>
+                <ul class="social">
+                    <li>
+                        <a href="https://www.facebook.com/" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitter.com/" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">
+                    - Our quality, solutions and market approach supports innovative partnership,
+                    trust and sustainability for our suppliers, customers and employees.<br>
+                    - we make furniture for life and take Pride in our Danish roots and Craftmanship.
+
+                </p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Customer Service</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Terms and Conditions</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Privacy Policy</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Site Map</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Delivery Policy</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">New Sohag University, Sohag Center, Sohag</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 19:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+20235355644</span>
+                        <span>+20198765432</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer-gallery">
+                <img src="../Source/dinning room.jpeg" alt="">
+                <img src="../Source/kitchen.png" alt="">
+                <img src="../Source/living-room-.jpg" alt="">
+                <img src="../Source/bedroom.jpg" alt="">
+                <img src="../Source/slider1.jpg" alt="">
+                <img src="../Source/slider2.jpg" alt="">
+            </div>
+        </div>
+        <p class="copyright">
+            &copy; 2021 <span>Artex</span> All Right Reserved
+        </p>
+    </div>
+    <!-- End footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/home.js"></script>
+    <script src="../js/categories.js"></script>
+    <script>
+        
+        if(localStorage.getItem("fullName") == null){
+            getElementById("555").textContent=""
+        }
+        else {document.getElementById("555").textContent =" " + localStorage.getItem("fullName");}
+        
+      </script>
+
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../Styles/sign up.css">
+
+
+</head>
+
+<body style="height: 1000px;">
+
+
+
+    <div class="container">
+        
+        <h1>ARTEX</h1>
+
+        <!-- switch tabs  -->
+        <ul>
+            <li id="btn1">
+                Sign Up
+
+            </li>
+            <li id="btn2" style="opacity: 0.5; ">
+
+                Log In
+            </li>
+        </ul>
+
+        <!-- controlling switch (Sign-Up tab content) -->
+        <div>
+
+
+            <form action="Home.html" id="signup">
+                     <h2> Sign Up </h2>
+                <div class="row clearfix">
+                    <input type="text" name="usrname" placeholder=" UserName" autocomplete="off" id="inpName1" />
+                </div>
+                <span id="pnamef"></span>
+
+                <div>
+                    <input type="email" name="email" placeholder=" Email" autocomplete="off" id="email" />
+                </div>
+                <span id="pEmail"></span>
+
+
+                <div class="input_field">
+                    <input type="password" name="password" placeholder=" Password " id="password" />
+                </div>
+                <span id="pPassword"></span>
+
+                <div class="input_field">
+                    <input type="text" name="phone" placeholder=" PhoneNumber" class="input_field2" autocomplete="off"
+                        id="phone" />
+                </div>
+                <span id="pphone"></span>
+
+                <div class="input_field radio_option">
+                    <input type="radio" name="radiogroup1" id="rd1">
+                    <label for="rd1" class="radio">Male</label>
+                    <input type="radio" name="radiogroup1" id="rd2">
+                    <label for="rd2" class="radio">Female</label>
+                </div>
+
+                <span id="pchacked"></span>
+
+                <div class="input_field checkbox_option">
+                    <input type="checkbox" id="cb1">
+                    <label for="cb1" class="radio">I agree with terms and conditions</label>
+                </div>
+                <span id="pchacked2"></span>
+
+                <input class="button" id="btsignup" type="submit" value="Register" onclick="saveinstorage()" />
+            </form>
+        </div>
+
+        <!-- controlling switch (login tab content) -->
+        <div>
+            <form action="Home.html" id="login">
+                <h2>Log In</h2>
+
+
+                <div class="row clearfix">
+                    <input type="text" name="usrname" placeholder=" UserName" autocomplete="off" id="inpName2" />
+                </div>
+                <span id="pname1"></span>
+
+                <div class="input_field">
+                    <input type="password" name="password" placeholder=" Password" id="password1" />
+                </div>
+                <span id="pPassword1"></span>
+
+                <span id="pname2"></span>
+
+                <input class="button" type="submit" value="Log In" />
+            </form>
+        </div>
+
+    </div>
+
+    <script src="../js/signup.js">
+
+    </script>
+
+
+</body>
+
+</html>

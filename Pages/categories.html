@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Styles/home.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="..\Styles\categories.css" rel="stylesheet">
+    <title>Categories</title>
+    <style>
+        #sidebar li.active,
+        #sidebar li:hover {
+            background-color: rgb(110, 122, 122);
+            color: white !important;
+        }
+
+        #sidebar li {
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 5px;
+
+        }
+
+        .categories .border-dark {
+
+            display: none;
+        }
+
+        .categories .Kitchens {
+
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header id="header">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+
+            <h1 class="logo me-auto me-lg-0">Artex</h1>
+            <nav id="navbar" class="navbar order-last order-lg-0">
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a class="active" href="./categories.html" disabled="true" onclick="return false">Categories</a>
+                    </li>
+                    <li><a href="./contact.html">Conatct</a></li>
+                    <li><a href="Sign up.html">Sign</a></li>
+                    <li class="cart">
+                        <a href="./cart1.html">Cart<i class="fas fa-shopping-cart"></i><span>0</span></a>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- .navbar -->
+
+            <div class="header-social-links d-none d-lg-block">
+                <a href="#" disabled="true" class="user" onclick="return false">
+                    <i class="far fa-user"></i> <span id="555"></span></a>
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="row ">
+        <div id="sidebar" class="col-lg-2 bg-light ps-5">
+
+            <a href="/" class="d-flex  align-items-center pb-sm-3 mb-md-0 me-md-auto  text-decoration-none"
+                style="padding-top:200px ; color: #34b7a7;">
+                <span class="fs-4 fw-bolder">C<span class="d-none d-sm-inline">ategories</span></span>
+            </a>
+            <ul class="filter nav nav-pills flex-sm-column flex-row flex-nowrap flex-shrink-1 flex-sm-grow-0 flex-grow-1 mb-sm-auto mb-0 justify-content-center align-items-center align-items-sm-start"
+                id="menu">
+
+                <li class="active mb-2" id="Kitchens">
+                    <span class="ms-1 d-none d-sm-inline ">Kitchens</span>
+                </li>
+                <li class="mb-2" id="LivingRoom">
+                    <span class="ms-1 d-none d-sm-inline ">Living Room</span>
+                </li>
+
+                <li class="mb-2  " id="DinningRoom">
+                    <span class="ms-1 d-none d-sm-inline ">Dinning Room</span>
+                </li>
+                <li id="BedRoom">
+                    <span class="ms-1 d-none d-sm-inline ">BedRoom</span>
+                </li>
+            </ul>
+
+
+
+
+
+        </div>
+
+        <div class="col-lg-10  categories mt-5 mb-5" id="bigdiv">
+
+
+            <div class="row d-flex align-items-start" style="margin-left:30px;">
+                <h1 id="headercat">Kitchens </h1>
+            </div>
+
+            <!-- Start Body 1-->
+            <div class="container">
+
+                <!-- header : category name -->
+                <!-- first row  -->
+                <div class="row d-flex justify-content-around mb-3" style="margin-left:30px;">
+                    <!-- product 1 -->
+                    <div class=" col-sm-4  m-10 border-dark Kitchens  ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/kit1.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Dark-Blue Cupboard </h2>
+                                <p class=""> Dark-Blue Cupboard with white decoration. </p>
+                                <pre class="productPrice h5">                  2500$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+                                <button id="btn1" class="btn btn-outline-danger " onclick="addToFav(0)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt1" class="btn btn-outline-info mt-3 add " onclick="addToCart(0)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 2-->
+                    <div class=" col-sm-4  m-10 border-dark Kitchens">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/kit2.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Yellow Wooden </h2>
+                                <p class=""> cheerful Yellow Cupboard </p>
+                                <pre class="productPrice h5">                   3000$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn2" class="btn btn-outline-danger " onclick="addToFav(1)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt2" class="btn btn-outline-info mt-3 add " onclick="addToCart(1)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 3 -->
+                    <div class=" col-sm-4  m-10 border-dark Kitchens">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/kit6.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Wooden Shelves </h2>
+                                <p class=""> 2 pieces of wooden shelves </p>
+                                <pre class="productPrice h5">                   150$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn3" class="btn btn-outline-danger " onclick="addToFav(2)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt3" class="btn btn-outline-info mt-3 add " onclick="addToCart(2)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- second row  -->
+
+                <div class="row d-flex justify-content-around" style="margin-left:30px;">
+                    <!-- product 4 -->
+                    <div class=" col-sm-4  m-10 border-dark Kitchens">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/kit.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> American Kitchen</h2>
+                                <p class=""> Wooden Kitchen Set (cupboard , chairs) </p>
+                                <pre class="productPrice h5">                  4000$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn4" class="btn btn-outline-danger " onclick="addToFav(3)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt3" class="btn btn-outline-info mt-3 add " onclick="addToCart(3)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 5 -->
+                    <div class=" col-sm-4  m-10 border-dark Kitchens  ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/kit11.png" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Mint Cupboard </h2>
+                                <p class=""> Light-Blue Cupboard with glass doors</p>
+                                <pre class="productPrice h5">                   150$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+                                <button id="btn5" class="btn btn-outline-danger " onclick="addToFav(4)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button class="btn btn-outline-info mt-3 add " onclick="addToCart(4)">
+                                    <h5><i class="fas fa-cart-plus"></i></h5>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 6 -->
+                    <div class=" col-sm-4  m-10 border-dark Kitchens ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/kit10.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Wooden Table </h2>
+                                <p class=""> 6 Seats with table </p>
+                                <pre class="productPrice h5">                   150$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn6" class="btn btn-outline-danger " onclick="addToFav(5)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt6" class="btn btn-outline-info mt-3 add " onclick="addToCart(5)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- pagenation -->
+
+            </div>
+
+
+            <!-- Start Body 2-->
+            <div class="container">
+                <!-- first row  -->
+                <div class="row d-flex justify-content-around mb-3" style="margin-left: 30px;">
+                    <!-- product 1 -->
+                    <div class=" col-sm-4  m-10 border-dark  DinningRoom  ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/din1.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Light Blue Set </h2>
+                                <p class=""> 6 light blue seats with wooden table </p>
+                                <pre class="productPrice h5">                  800$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+                                <button id="btn7" class="btn btn-outline-danger " onclick="addToFav(6)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt7" class="btn btn-outline-info mt-3 add " onclick="addToCart(6)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 2-->
+                    <div class=" col-sm-4  m-10 border-dark DinningRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/din7.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Console Table </h2>
+                                <p class=""> dark brown console table with Hexa mirror </p>
+                                <pre class="productPrice h5">                   1000$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn8" class="btn btn-outline-danger " onclick="addToFav(7)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt8" class="btn btn-outline-info mt-3 add " onclick="addToCart(7)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 3 -->
+                    <div class=" col-sm-4  m-10 border-dark DinningRoom ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/din3.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Golden Set </h2>
+                                <p class=""> 6 golden seats with white rounded table </p>
+                                <pre class="productPrice h5">                 1500$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn9" class="btn btn-outline-danger " onclick="addToFav(8)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt9" class="btn btn-outline-info mt-3 add " onclick="addToCart(8)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- second row  -->
+
+                <div class="row d-flex justify-content-around" style="margin-left: 30px;">
+                    <!-- product 4 -->
+                    <div class=" col-sm-4  m-10 border-dark DinningRoom ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/din2.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName">White Table Set </h2>
+                                <p class=""> 3 white-wooden seats,couch ,rounded table. </p>
+                                <pre class="productPrice h5">                  2000$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn10" class="btn btn-outline-danger " onclick="addToFav(9)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt10" class="btn btn-outline-info mt-3 add " onclick="addToCart(9)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 5 -->
+                    <div class=" col-sm-4  m-10 border-dark DinningRoom ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/din5.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Green Vase </h2>
+                                <p class=""> 2 rounded special green vase </p>
+                                <pre class="productPrice h5">                   200$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn11" class="btn btn-outline-danger " onclick="addToFav(10)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt11" class="btn btn-outline-info mt-3 add " onclick="addToCart(10)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 6 -->
+                    <div class=" col-sm-4  m-10 border-dark DinningRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/din6.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Wooden-Gray Set </h2>
+                                <p class=""> 4 gray seats with black rounded table </p>
+                                <pre class="productPrice h5">                  1700$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn12" class="btn btn-outline-danger " onclick="addToFav(11)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt12" class="btn btn-outline-info mt-3 add " onclick="addToCart(11)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Start Body 3-->
+            <div class="container">
+
+                <!-- first row  -->
+                <div class="row d-flex justify-content-around mb-3" style="margin-left: 30px;">
+                    <!-- product 1 -->
+                    <div class=" col-sm-4  m-10 border-dark  LivingRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="rounded " src="../Source/ProductsImages/liv6.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Mint Chair </h2>
+                                <p class=""> comfortable chair with fabulous color </p>
+                                <pre class="productPrice h5">                   200$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+                                <button id="btn13" class="btn btn-outline-danger " onclick="addToFav(12)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt13" class="btn btn-outline-info mt-3 add " onclick="addToCart(12)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 2-->
+                    <div class=" col-sm-4  m-10 border-dark LivingRoom  ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/liv5.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Stroke Table </h2>
+                                <p class=""> unique stroke-standing table</p>
+                                <pre class="productPrice h5">                   300$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn14" class="btn btn-outline-danger " onclick="addToFav(13)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+
+                                <button id="bt14" class="btn btn-outline-info mt-3 add " onclick="addToCart(13)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 3 -->
+                    <div class=" col-sm-4  m-10 border-dark LivingRoom ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/liv3.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Golden light Unit </h2>
+                                <p class=""> Golden lighening Unit that attracts all sights </p>
+                                <pre class="productPrice h5">                   500$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+
+                                <button id="btn15" class="btn btn-outline-danger " onclick="addToFav(14)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt15" class="btn btn-outline-info mt-3 add " onclick="addToCart(14)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- second row  -->
+
+                <div class="row d-flex justify-content-around" style="margin-left: 30px;">
+                    <!-- product 4 -->
+                    <div class=" col-sm-4  m-10 border-dark LivingRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/liv4.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Golden Sofa </h2>
+                                <p class=""> 3 seats Golden Sofa with printed cusions </p>
+                                <pre class="productPrice h5">                   700$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+                                <button id="btn16" class="btn btn-outline-danger " onclick="addToFav(15)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt16" class="btn btn-outline-info mt-3 add " onclick="addToCart(15)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 5 -->
+                    <div class=" col-sm-4  m-10 border-dark LivingRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/liv8.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Curtain </h2>
+                                <p class=""> white wool hand-made Curtain </p>
+                                <pre class="productPrice h5">                   200$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn17" class="btn btn-outline-danger " onclick="addToFav(16)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt17" class="btn btn-outline-info mt-3 add " onclick="addToCart(16)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 6 -->
+                    <div class=" col-sm-4  m-10 border-dark LivingRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class=" rounded " src="../Source/ProductsImages/liv10.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Living Room Set </h2>
+                                <p class=""> 3-seats couch , 2 chairs and 1 table </p>
+                                <pre class="productPrice h5">                   2000$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn18" class="btn btn-outline-danger " onclick="addToFav(17)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt18" class="btn btn-outline-info mt-3 add " onclick="addToCart(17)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Start Body 4-->
+
+            <div class="container">
+
+
+                <!-- first row  -->
+                <div class="row d-flex justify-content-around mb-3" style="margin-left: 30px;">
+                    <!-- product 1 -->
+                    <div class=" col-sm-4  m-10 border-dark BedRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/bed6.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Golden MakeUp-Table </h2>
+                                <p class=""> a set of golden decoration pecies </p>
+                                <pre class="productPrice h5">                   400$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+                                <button id="btn19" class="btn btn-outline-danger " onclick="addToFav(18)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt19" class="btn btn-outline-info mt-3 add " onclick="addToCart(18)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 2-->
+                    <div class=" col-sm-4  m-10 border-dark BedRoom ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/bed1.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Simple Wooden </h2>
+                                <p class=""> Simple Wooden high Bed with wooden stand. <br></p>
+                                <pre class="productPrice h5">                  500$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+                                <button id="btn20" class="btn btn-outline-danger " onclick="addToFav(19)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt20" class="btn btn-outline-info mt-3 add " onclick="addToCart(19)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 3 -->
+                    <div class=" col-sm-4  m-10 border-dark BedRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/bed5.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Golden Dicoration Set </h2>
+                                <p class=""> 3 golden light units & 2 golden vases. <br></p>
+                                <pre class="productPrice h5 ">                   900$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn21" class="btn btn-outline-danger " onclick="addToFav(20)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt21" class="btn btn-outline-info mt-3 add " onclick="addToCart(20)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- second row  -->
+
+                <div class="row d-flex justify-content-around" style="margin-left: 30px;">
+                    <!-- product 4 -->
+                    <div class=" col-sm-4  m-10 border-dark BedRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/bed4.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Shezlong </h2>
+                                <p class=""> 1 Shezlong with 2 cushioned Stools </p>
+                                <pre class="productPrice h5">                  1000$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+                                <button id="btn22" class="btn btn-outline-danger " onclick="addToFav(21)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt22" class="btn btn-outline-info mt-3 add " onclick="addToCart(21)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 5 -->
+                    <div class=" col-sm-4  m-10 border-dark BedRoom ">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/bed.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Wooden Bedroom </h2>
+                                <p class=""> complete wooden bedroom set : bed, closet. </p>
+                                <pre class="productPrice h5">                   3000$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn23" class="btn btn-outline-danger " onclick="addToFav(22)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt23" class="btn btn-outline-info mt-3 add " onclick="addToCart(22)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- product 6 -->
+                    <div class=" col-sm-4  m-10 border-dark BedRoom">
+                        <div class="card  productCard ">
+                            <div class="row me-auto  ms-1 mt-2">
+                                <img class="  rounded " src="../Source/ProductsImages/bed7.jpg" alt="Card image">
+                            </div>
+
+                            <div class=" row card-body d-flex flex-column  justify-content-between ">
+                                <h2 class="productName"> Cashmere Set </h2>
+                                <p class=""> warm cashmere mattress set:bed , chair and closet. </p>
+                                <pre class="productPrice h5">                 5000$ </pre>
+                                <br>
+                            </div>
+
+                            <div class=" row card-body d-flex ms-4 me-4 align-items-center">
+
+                                <button id="btn24" class="btn btn-outline-danger " onclick="addToFav(23)">
+                                    <i class="far fa-heart h5"></i>
+                                </button>
+                                <button id="bt24" class="btn btn-outline-info mt-3 add " onclick="addToCart(23)">
+                                    <i class="fas fa-cart-plus h5"></i>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="box">
+                <h3>ARTEX</h3>
+                <ul class="social">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="youtube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text">
+                    - Our quality, solutions and market approach supports innovative partnership,
+                    trust and sustainability for our suppliers, customers and employees.<br>
+                    - we make furniture for life and take Pride in our Danish roots and Craftmanship.
+                </p>
+            </div>
+            <div class="box">
+                <ul class="links">
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Customer Service</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Terms and Conditions</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Privacy Policy</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Site Map</a></li>
+                    <li><i class="fas fa-angle-double-right"></i><a href="#">Delivery Policy</a></li>
+                </ul>
+            </div>
+            <div class="box">
+                <div class="line">
+                    <i class="fas fa-map-marker-alt fa-fw"></i>
+                    <div class="info">New Sohag University, Sohag Center, Sohag</div>
+                </div>
+                <div class="line">
+                    <i class="far fa-clock fa-fw"></i>
+                    <div class="info">Business Hours: From 10:00 To 19:00</div>
+                </div>
+                <div class="line">
+                    <i class="fas fa-phone-volume fa-fw"></i>
+                    <div class="info">
+                        <span>+20235355644</span>
+                        <span>+20198765432</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box footer-gallery">
+                <img src="../Source/dinning room.jpeg" alt="">
+                <img src="../Source/kitchen.png" alt="">
+                <img src="../Source/living-room-.jpg" alt="">
+                <img src="../Source/bedroom.jpg" alt="">
+                <img src="../Source/slider1.jpg" alt="">
+                <img src="../Source/slider2.jpg" alt="">
+            </div>
+        </div>
+        <p class="copyright">
+            &copy; 2021 <span>Artex</span> All Right Reserved
+        </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- <script src="../js/home.js"></script> -->
+    <script src="../js/products.js"></script>
+    <script src="../js/categories.js"></script>
+    <script>
+        if (localStorage.getItem("fullName") == null) {
+            getElementById("555").textContent = ""
+        } else {
+            document.getElementById("555").textContent = " " + localStorage.getItem("fullName");
+        }
+    </script>
+
+</body>
+
+</html>

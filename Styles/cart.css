@@ -1,0 +1,12 @@
+		body {
+  background: #669999;
+  background: linear-gradient(to bottom right, #006666 -19%, #669999 40%);
+  min-height: 100vh;
+}
+.cart_container,.cart-quantity-input,.favorites_container{
+  background: #e9e8e6;
+}
+.checkout_btn{
+  background: #669999;
+  color: white;
+}
